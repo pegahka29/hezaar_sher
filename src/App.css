@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+  background-color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/*@font-face {*/
+/*  font-family: 'Open Sans';*/
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  src: local('Open Sans'), local('OpenSans'),*/
+/*    url('../fonts/Rezvan/Rezvan.ttf') format('ttf'), !* Safari, Android, iOS *!}*/
+/*body {*/
+/*  font-family: 'Open Sans';*/
+/*}*/
+.home_fal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.home_logo {
+ display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+.tabs {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: center;
+  color: black;
+}
+.tabs_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9px;
+  margin-left: 100px;
+}
+.tabs_items {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.tab1 {
+margin-left: 75px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: black;
+}
+.tab2 {
+  margin-left: 75px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: black;
+}
+.tab3 {
+  white-space: nowrap;
+  font-size: 14px;
+  color: black;
+}
+.home_header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: start;
+
+  color: white;
+}
+.home_fal_info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: start;
+}
+.home_fal_info_span {
+  font-size: 16px;
+  white-space: pre-wrap;
+  position: absolute;
+  width: 457px;
+  height: 134px;
+  left: 500px;
+  top: 261px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 156% */
+
+  text-align: right;
+
+  color: #171717;
+}
+.home_fal_info_img {
+  box-shadow: 0px 5px 5px 1px rgba(196, 196, 196, 0.64);
+  border-radius: 20px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 267px;
+}
+.home_fal_body {
+  background-color: white;
+}
+.home_button1 {
+  position: absolute;
+  width: 80px;
+  height: 38px;
+  left: 874px;
+  top: 420px;
+  background: #ECC75B;
+  box-shadow: 0px 4px 5px rgba(196, 196, 196, 0.4);
+  border-radius: 10px;
+}
+.home_button2{
+  position: absolute;
+  width: 80px;
+  height: 38px;
+  left: 782px;
+  top: 420px;
+  background: #ECC75B;
+  box-shadow: 0 4px 5px rgba(196, 196, 196, 0.38);
+  border-radius: 10px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
