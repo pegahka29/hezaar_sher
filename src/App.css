@@ -28,15 +28,11 @@
 .App-link {
   color: #61dafb;
 }
-/*@font-face {*/
-/*  font-family: 'Open Sans';*/
-/*  font-style: normal;*/
-/*  font-weight: 400;*/
-/*  src: local('Open Sans'), local('OpenSans'),*/
-/*    url('../fonts/Rezvan/Rezvan.ttf') format('ttf'), !* Safari, Android, iOS *!}*/
-/*body {*/
-/*  font-family: 'Open Sans';*/
-/*}*/
+
+body {
+  font-family:
+          A Rezvan ;
+}
 .home_fal {
   display: flex;
   flex-direction: row;
@@ -106,16 +102,13 @@ margin-left: 75px;
 .home_fal_info_span {
   font-size: 16px;
   white-space: pre-wrap;
+  font-weight: 400;
   position: absolute;
   width: 457px;
   height: 134px;
   left: 500px;
   top: 261px;
-
-  font-family: A Rezvan;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 25px;
   /* or 156% */
 
@@ -124,7 +117,7 @@ margin-left: 75px;
   color: #171717;
 }
 .home_fal_info_img {
-  box-shadow: 0px 5px 5px 1px rgba(196, 196, 196, 0.64);
+  box-shadow: 0 5px 5px 1px rgba(196, 196, 196, 0.64);
   border-radius: 20px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   width: 267px;
@@ -157,6 +150,13 @@ margin-left: 75px;
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(30deg);
   }
 }
+@font-face {
+  font-family: "rezvan";
+ src: url("fonts/Rezvan/Rezvan.ttf") format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
