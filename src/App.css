@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: white;
+  background-color: #E5E5E5;
 }
 
 .App-logo {
@@ -13,45 +13,41 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_header {
+  background-color: #E5E5E5;
+  min-height: 0vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #E5E5E5;
 }
-
 .App-link {
   color: #61dafb;
 }
 
 body {
-  font-family:
-          A Rezvan ;
+  font-family: A Rezvan ;
+    background-color: #E5E5E5 !important;
 }
 .home_fal {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  background-color: white;
+  width:100%
 }
 .home_logo {
  display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .tabs {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: end;
-  align-items: center;
-  color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: black;
+    margin-right: 30px;
 }
 .tabs_logo {
   display: flex;
@@ -67,53 +63,46 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  font-weight: 600;
 }
 .tab1 {
 margin-left: 75px;
   white-space: nowrap;
-  font-size: 14px;
-  color: black;
+  font-size: 16px;
+  color: #171717;
 }
 .tab2 {
   margin-left: 75px;
   white-space: nowrap;
-  font-size: 14px;
-  color: black;
+  font-size: 16px;
+  color: #171717;
 }
 .tab3 {
   white-space: nowrap;
-  font-size: 14px;
-  color: black;
-}
-.home_header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: start;
-
-  color: white;
+  font-size: 16px;
+  color: #171717;
 }
 .home_fal_info {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: end;
-  align-items: start;
+  align-items: flex-start;
+  margin-right: 90px;
+}
+.home_fal_info_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
 }
 .home_fal_info_span {
   font-size: 16px;
   white-space: pre-wrap;
   font-weight: 400;
-  position: absolute;
   width: 457px;
   height: 134px;
-  left: 500px;
-  top: 261px;
   font-style: normal;
   line-height: 25px;
-  /* or 156% */
-
   text-align: right;
-
   color: #171717;
 }
 .home_fal_info_img {
@@ -123,27 +112,35 @@ margin-left: 75px;
   width: 267px;
 }
 .home_fal_body {
-  background-color: white;
+  background-color: #E5E5E5;
+    width: 100%;
+    height: 100%;
 }
 .home_button1 {
-  position: absolute;
   width: 80px;
   height: 38px;
-  left: 874px;
-  top: 420px;
   background: #ECC75B;
-  box-shadow: 0px 4px 5px rgba(196, 196, 196, 0.4);
+  border: none;
+  box-shadow: 0 4px 5px rgba(196, 196, 196, 0.4);
   border-radius: 10px;
+
+}
+.home_buttons {
+ display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
 }
 .home_button2{
-  position: absolute;
   width: 80px;
   height: 38px;
-  left: 782px;
-  top: 420px;
+  border: none;
   background: #ECC75B;
   box-shadow: 0 4px 5px rgba(196, 196, 196, 0.38);
   border-radius: 10px;
+  margin-left: 10px;
 }
 @keyframes App-logo-spin {
   from {
