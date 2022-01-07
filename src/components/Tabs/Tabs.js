@@ -1,6 +1,6 @@
 import React from 'react'
 import './tabsStyle.css'
-import logo from '../../images/1 3.png'
+import logo from '../../images/logo.png'
 import {Link} from 'react-router-dom';
 
 function Tabs() {
@@ -33,7 +33,7 @@ function Tabs() {
                 <Link to="/fal">
                 <span className='tab1' onClick={fetchFal}>فال حافظ</span>
                 </Link>
-                <Link to='/ashaar'>
+                <Link to='/random/poet'>
                 <span className='tab2'>گنجینه اشعار</span>
                 </Link>
                 <span className='tab3'>درباره ما</span>

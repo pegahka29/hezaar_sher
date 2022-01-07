@@ -27,11 +27,9 @@ function Home() {
     }
     return (
         <div className='home_fal_body'>
+            <img className='home_logo' src={tarh} alt='title'/>
             <Tabs/>
             <div className='home_fal'>
-                    <div className='home_logo'>
-                        <img src={tarh} alt='title'/>
-                    </div>
                 <div className='home_fal_info'>
                         <img src={fal} alt='fal' className='home_fal_info_img'/>
                     <div className='home_fal_info_title'>
@@ -43,7 +41,7 @@ function Home() {
                         <Link to="/fal">
                         <button className='home_button1' onClick={fetchFal}> فال حافظ</button>
                         </Link>
-                        <Link to='/ashaar'>
+                        <Link to='/shaer'>
                         <button className='home_button2'>گنجینه اشعار</button>
                         </Link>
                     </div>

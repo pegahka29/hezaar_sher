@@ -1,0 +1,133 @@
+.shaer {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/shaer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shaer-bg-color-orange {
+    position: absolute;
+    width: 892px;
+    height: 421px;
+    left: -32px;
+    top: 154px;
+    background: #F5D36F;
+    border: 1px solid #F4BB13;
+    box-sizing: border-box;
+}
+.shaer-bg-tarh {
+    background-image: url("../../images/shaer-bg-tarh.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -144px;
+    top: 70px;
+}
+.shaer-bg-color-blue {
+    position: absolute;
+    width: 554px;
+    height: 292px;
+    left: 841px;
+    top: 267px;
+    background: rgba(208, 227, 245, 0.5);
+    border: 1px solid #99C4EF;
+    box-sizing: border-box;
+}
+.shoara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.molana-info {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 171px;
+    top: 400px;
+    filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+    border-radius: 15px;
+    background-color:white;
+}
+.molana-info-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #171717 !important;
+}
+.ferdosi-info {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 421px;
+    top: 400px;
+    filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+    border-radius: 15px;
+    background-color:white;
+}
+.ferdosi-info-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #171717 !important;
+}
+.hafez-info {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 674px;
+    top: 400px;
+    filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+    border-radius: 15px;
+    background-color:white;
+}
+.hafez-info-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #171717 !important;
+}
+.sadi-info {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 926px;
+    top: 400px;
+    filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+    border-radius: 15px;
+    background-color:white;
+}
+.sadi-info-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #171717 !important;
+}
+.nezami-info {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left:1179px;
+    top: 400px;
+    filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+    border-radius: 15px;
+    background-color:white;
+}
+.nezami-info-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #171717 !important;
+}
