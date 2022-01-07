@@ -1,14 +1,19 @@
 import './App.css';
-import Home from './components/Home'
-import Tabs from './components/Tabs'
+import {BrowserRouter as Router, Routes , Route} from "react-router-dom";
+import Home from './components/Home/Home';
+import Fal from './components/Fal/Fal';
+import Ashaar from './components/Ashaar/Ashaar'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <Tabs/>
-      </header>
-        <Home/>
-    </div>
+      <>
+          <Router>
+              <Routes>
+                  <Route path="/" exact element={<Home/>} />
+                  <Route path="/fal" exact element={<Fal/>} />
+                  <Route path="/ashaar" exact element={<Ashaar/>} />
+              </Routes>
+          </Router>
+      </>
   );
 }
 

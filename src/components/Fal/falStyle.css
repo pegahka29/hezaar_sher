@@ -1,0 +1,86 @@
+
+.fal {
+    width: 100%;
+    height: 100vh;
+     background-image: url("../../images/fal-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poem-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background: rgba(236, 210, 118, 0.8);
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+.fal-info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.poem-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fal-poem {
+    width:auto;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin: 23px 14px;
+}
+.fal-result {
+    display: flex;
+    font-size: 19px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #171717;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.fal-poem-result {
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    line-height: 2rem;
+    color: #171717;
+    font-weight: bold;
+    margin: 50px 40px 20px;
+}
+.fal-poem-audio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.verse1 {
+    right: 6%;
+}
+
+.verse2 {
+    left: 6%;
+}
+.fal-backspace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.backspace-btn {
+    width: auto;
+    height: 29px;
+    background: #DFE9F3;
+    border-radius: 10px 0;
+    margin-bottom: 20px;
+}
+

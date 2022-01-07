@@ -27,120 +27,17 @@
 }
 
 body {
-  font-family: A Rezvan ;
+  font-family: Shabnam ;
     background-color: #E5E5E5 !important;
 }
-.home_fal {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width:100%
+button {
+  font-family: Shabnam;
+  font-size: 14px;
 }
-.home_logo {
- display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.tabs {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    color: black;
-    margin-right: 30px;
-}
-.tabs_logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 9px;
-  margin-left: 100px;
-}
-.tabs_items {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  font-weight: 600;
-}
-.tab1 {
-margin-left: 75px;
-  white-space: nowrap;
-  font-size: 16px;
-  color: #171717;
-}
-.tab2 {
-  margin-left: 75px;
-  white-space: nowrap;
-  font-size: 16px;
-  color: #171717;
-}
-.tab3 {
-  white-space: nowrap;
-  font-size: 16px;
-  color: #171717;
-}
-.home_fal_info {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  margin-right: 90px;
-}
-.home_fal_info_title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 20px;
-}
-.home_fal_info_span {
-  font-size: 16px;
-  white-space: pre-wrap;
-  font-weight: 400;
-  width: 457px;
-  height: 134px;
-  font-style: normal;
-  line-height: 25px;
-  text-align: right;
-  color: #171717;
-}
-.home_fal_info_img {
-  box-shadow: 0 5px 5px 1px rgba(196, 196, 196, 0.64);
-  border-radius: 20px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  width: 267px;
-}
-.home_fal_body {
-  background-color: #E5E5E5;
-    width: 100%;
-    height: 100%;
-}
-.home_button1 {
-  width: 80px;
-  height: 38px;
-  background: #ECC75B;
-  border: none;
-  box-shadow: 0 4px 5px rgba(196, 196, 196, 0.4);
-  border-radius: 10px;
-
-}
-.home_buttons {
- display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 30px;
-  width: 100%;
-}
-.home_button2{
-  width: 80px;
-  height: 38px;
-  border: none;
-  background: #ECC75B;
-  box-shadow: 0 4px 5px rgba(196, 196, 196, 0.38);
-  border-radius: 10px;
-  margin-left: 10px;
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none !important;
 }
 @keyframes App-logo-spin {
   from {
@@ -150,10 +47,5 @@ margin-left: 75px;
     transform: rotate(30deg);
   }
 }
-@font-face {
-  font-family: "rezvan";
- src: url("fonts/Rezvan/Rezvan.ttf") format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
