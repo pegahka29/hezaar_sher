@@ -1,0 +1,94 @@
+.ashaar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.poets {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/shaer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ashaar-tarh {
+    background-image: url("../../images/ashaar-tarh.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 84%;
+    top: -96px;
+}
+.ashaar-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.ashaar-shaer-orange-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background: #F5D36F;
+    border: 1px solid #F4BB13;
+    box-sizing: border-box;
+    position: relative;
+}
+.ashaar-shaer-white-box {
+    width:auto;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin: 40px 50px;
+}
+.ashaar-shaer-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    line-height: 2rem;
+    color: #171717;
+    font-weight: bold;
+}
+.poemTitle {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #171717;
+}
+.poemId {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #171717;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.verse1 {
+    right: 6%;
+}
+
+.verse2 {
+    left: 6%;
+}
+.refresh-ashaar {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 889px;
+    top: 463px;
+}

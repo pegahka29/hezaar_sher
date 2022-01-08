@@ -1,25 +1,28 @@
 import React from 'react';
 import './Ashaar.css';
-import bg from '../../images/shaer.png'
-
+import refresh from "../../images/refresh.png"
 function Ashaar() {
     return(
-        <div className="container-poets">
-            <img src={bg} className="bg-tarh-r" alt="" />
-            <div className="flex-direction">
-                <div className="list--poets-random-p">
-                    <img src="" id="imgId" alt="" />
-                    <div className="box-poems">
-                        <p id="poemTitle"></p>
-                        <p id="poemId"></p>
-                    </div>
+        <div className='ashaar-container'>
+            <div className='ashaar-tarh'>
+            </div>
+            <div className='poets'>
+                <div className='ashaar-box'>
+                    <div className="ashaar-shaer-orange-box">
+                        <div className='ashaar-shaer-white-box'>
+                            <img src="" id="imgId" alt="" />
+                            <div className="ashaar-shaer-result">
+                                <span id="poemTitle" className='poemTitle'>
+                                </span>
+                                <span id="poemId" className='poemId'>
+                                </span>
+                            </div>
+                        </div>
+                        <img src={refresh} alt='update' className='refresh-ashaar'/>
+                        </div>
                 </div>
-                <div className="box-about-poets">
-                    <p id="textPoet"></p>
-                    <audio controls id='poemAudio'></audio>
                 </div>
             </div>
-        </div>
     )
 }
 

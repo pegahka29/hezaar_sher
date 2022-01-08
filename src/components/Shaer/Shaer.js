@@ -10,7 +10,7 @@ import nezami from "../../images/nezami.png"
 function Shaer() {
     const [value] = useState('');
 
-    function randomPoets(event, value) {
+    function ashaar(event, value) {
                 fetch("https://ganjgah.ir/api/ganjoor/poem/random?poetId=" + value +"?poems=true")
                     .then(res=> res.json())
                     .then(item => {
@@ -20,15 +20,14 @@ function Shaer() {
                         poemTitle.textContent = item.title;
                         let verses = item.verses;
                         let info = '';
-                        verses.map((i,j) => {
-                            if(j % 2 == 0){
-                                info +=  '<span id="onePoem">' + i.text + '</span>' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '<span id="twoPoem">' + verses[j+1].text + '</span>' + "<br/>";
+                        verses.map((x,y) => {
+                            if(y % 2 === 0){
+                                info +=  '<span id="verse1">' + x.text + '</span>' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '<span id="verse2">' + verses[y+1].text + '</span>' + "<br/>";
                             }
                         })
                         poemText.innerHTML = info
                         let srcImg = document.querySelector('#imgId')
                         srcImg.src = "https://ganjgah.ir" + item.imageUrl
-                        poemAudio.src = item["recitations"][0].mp3Url;
                     })
     }
     return (
@@ -40,31 +39,31 @@ function Shaer() {
            </div>
             <div className='shoara'>
                 <div className='molana-info'>
-                    <Link to="/random/poet" value={value} onClick={(e) => randomPoets(e, '97')}>
+                    <Link to="/random/poet" value={value} onClick={(e) => ashaar(e, '97')}>
                         <img src={molana}  />
                         <span className="molana-info-span">مولانا</span>
                     </Link>
                 </div>
                 <div className='ferdosi-info'>
-                    <Link to="/random/poet" value={value} onClick={(e) => randomPoets(e, '118')}>
+                    <Link to="/random/poet" value={value} onClick={(e) => ashaar(e, '118')}>
                         <img src={ferdosi} />
                         <span className="ferdosi-info-span">فردوسی</span>
                     </Link>
             </div>
                 <div className='hafez-info'>
-                    <Link to="/random/poet" value={value} onClick={(e) => randomPoets(e, '9')}>
+                    <Link to="/random/poet" value={value} onClick={(e) => ashaar(e, '9')}>
                         <img src={hafez} />
                         <span className="hafez-info-span"> حافظ</span>
                     </Link>
                 </div>
                 <div className='sadi-info'>
-                    <Link to="/random/poet" value={value} onClick={(e) => randomPoets(e, '118')}>
+                    <Link to="/random/poet" value={value} onClick={(e) => ashaar(e, '118')}>
                         <img src={sadi} />
                         <span className="sadi-info-span"> سعدی</span>
                     </Link>
                 </div>
                 <div className='nezami-info'>
-                    <Link to="/random/poet" value={value} onClick={(e) => randomPoets(e, '110')}>
+                    <Link to="/random/poet" value={value} onClick={(e) => ashaar(e, '110')}>
                         <img src={nezami} />
                         <span className="nezami-info-span"> نظامی </span>
                     </Link>

@@ -33,9 +33,7 @@ function Tabs() {
                 <Link to="/fal">
                 <span className='tab1' onClick={fetchFal}>فال حافظ</span>
                 </Link>
-                <Link to='/random/poet'>
                 <span className='tab2'>گنجینه اشعار</span>
-                </Link>
                 <span className='tab3'>درباره ما</span>
             </div>
         </div>

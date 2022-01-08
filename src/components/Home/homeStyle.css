@@ -59,12 +59,13 @@
     border: none;
     box-shadow: 0 4px 5px rgba(196, 196, 196, 0.4);
     border-radius: 10px;
+    margin-left: 10px;
 
 }
 .home_buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 80px;
     width: 100%;
@@ -75,5 +76,4 @@
     background: #ECC75B;
     box-shadow: 0 4px 5px rgba(196, 196, 196, 0.38);
     border-radius: 10px;
-    margin-left: 10px;
 }
