@@ -16,10 +16,14 @@ function Ashaar() {
                                 </span>
                                 <span id="poemId" className='poemId'>
                                 </span>
+
                             </div>
                         </div>
                         <img src={refresh} alt='update' className='refresh-ashaar'/>
                         </div>
+                    <div className="blue-background">
+                        <span className='shaer-info' id="shaerInfo"></span>
+                    </div>
                 </div>
                 </div>
             </div>

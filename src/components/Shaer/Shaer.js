@@ -11,8 +11,15 @@ function Shaer() {
     const [value] = useState('');
 
     function ashaar(event, value) {
-                fetch("https://ganjgah.ir/api/ganjoor/poem/random?poetId=" + value +"?poems=true")
-                    .then(res=> res.json())
+        fetch("https://ganjgah.ir/api/ganjoor/cat/"+ value +"?poems=true")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                const id = data.poet.id
+                let textPoet = document.querySelector('#shaerInfo')
+                textPoet.textContent = data.poet.description
+                fetch("https://ganjgah.ir/api/ganjoor/poem/random?poetId=" + value + "?poems=true")
+                    .then(res => res.json())
                     .then(item => {
                         let poemTitle = document.querySelector('#poemTitle')
                         let poemText = document.querySelector('#poemId')
@@ -20,15 +27,16 @@ function Shaer() {
                         poemTitle.textContent = item.title;
                         let verses = item.verses;
                         let info = '';
-                        verses.map((x,y) => {
-                            if(y % 2 === 0){
-                                info +=  '<span id="verse1">' + x.text + '</span>' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '<span id="verse2">' + verses[y+1].text + '</span>' + "<br/>";
+                        verses.map((x, y) => {
+                            if (y % 2 === 0) {
+                                info += '<span id="verse1">' + x.text + '</span>' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + '<span id="verse2">' + verses[y + 1].text + '</span>' + "<br/>";
                             }
                         })
                         poemText.innerHTML = info
                         let srcImg = document.querySelector('#imgId')
                         srcImg.src = "https://ganjgah.ir" + item.imageUrl
                     })
+            })
     }
     return (
         <div className='shaer'>

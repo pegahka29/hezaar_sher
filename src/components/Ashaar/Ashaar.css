@@ -87,8 +87,29 @@
 }
 .refresh-ashaar {
     position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 889px;
-    top: 463px;
+    right: 2%;
+    bottom: 2%;
+}
+.blue-background {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    position: absolute;
+    width: auto;
+    max-width: 550px;
+    height: 292px;
+    left: 45%;
+    top:25%;
+    background: rgba(208, 227, 245, 0.5);
+    border: 1px solid #99C4EF;
+    box-sizing: border-box
+}
+.shaer-info {
+    margin:2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: right;
 }
