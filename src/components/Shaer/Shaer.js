@@ -23,7 +23,6 @@ function Shaer() {
                     .then(item => {
                         let poemTitle = document.querySelector('#poemTitle')
                         let poemText = document.querySelector('#poemId')
-                        let poemAudio = document.querySelector('#poemAudio')
                         poemTitle.textContent = item.title;
                         let verses = item.verses;
                         let info = '';

@@ -1,7 +1,7 @@
 
 .fal {
     width: 100%;
-    height: 100vh;
+    height: 101vh;
      background-image: url("../../images/fal-bg.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -11,12 +11,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: auto;
     background: rgba(236, 210, 118, 0.8);
     border-radius: 15px;
     margin-top: 60px;
     margin-right: 40px;
+    max-width: 700px;
 }
 .fal-info {
     width: 100%;
@@ -84,3 +83,40 @@
     margin-bottom: 20px;
 }
 
+.tafsir-fal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px 14px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.tafsir-title {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #171717;
+    margin-top: 30px;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+}
+.tafsir-text {
+    font-size: 17px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    color: #171717;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+}
